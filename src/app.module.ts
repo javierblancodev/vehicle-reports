@@ -14,6 +14,7 @@ import { Report } from './reports/report.entity';
       database: 'db.sqlite',
       // connect entities to root connection
       entities: [User, Report],
+      // Dev mode: run migrations automatically
       synchronize: true,
     }),
     UsersModule,
